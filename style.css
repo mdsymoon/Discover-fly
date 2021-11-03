@@ -33,10 +33,12 @@ nav ul li a{
     color: #fff;
     padding: 10px;
     text-transform: uppercase;
+    text-decoration: none;
 }
 nav ul li a:hover, a.active{
     background-color: #3352F2;
     border-radius: 5px;
+    color: white;
 }
 .main-content{
     display: grid;
@@ -67,9 +69,10 @@ nav ul li a:hover, a.active{
 }
 .btn{
     color: #3352F2;
-    font-size: 20px;
+    font-size: 30px;
     padding: 2px;
     margin-top: 18px;
+    border:none;
    
 }
 .booking-form  .calculations{
@@ -114,9 +117,10 @@ nav ul li a:hover, a.active{
     border: none;
     color: #fff;
     font-weight: 500;
-    background-color:  #3352F2;
+    background-color:  #1c3de6;
 }
 .amount{
     display: flex;
     justify-content: space-between;
 }
+

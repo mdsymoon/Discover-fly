@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flight Booking</title>
     <!-- Fonts -->
+    <script src="https://kit.fontawesome.com/64da937480.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="all.min.css">
@@ -55,8 +57,8 @@
                     <input id= "first-class-value" class="inp-style inp-width" value ="0" type="number" name="">
                 </div>
                 <div class="plus-minus-btn">
-                    <button onclick="handleTicket('first-class', true)" class="btn btn-default">+</i></button>
-                    <button onclick="handleTicket('first-class', false)" class="btn btn-default">-</i></button>
+                    <button onclick="handleTicket('first-class', true)" class="btn btn-default"><i class="fas fa-plus"></i></button>
+                    <button onclick="handleTicket('first-class', false)" class="btn btn-default"><i class="fas fa-minus"></i></button>
                     
                 </div>
             </div>
@@ -67,8 +69,9 @@
                     <input  id= "Economy-value" class="inp-style inp-width" value="0" type="number" name="">
                 </div>
                 <div class="plus-minus-btn">
-                    <button onclick="handleTicket('Economy', true)" class="btn btn-default">+</i></button>
-                    <button onclick="handleTicket('Economy', false)" class="btn btn-default">-</i></button>
+                    <button onclick="handleTicket('Economy', true)" class="btn btn-default"><i class="fas fa-plus"></i></button>
+                    <button onclick="handleTicket('Economy', false)" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                    
                 </div>
             </div>
             <div class="calculations">
@@ -86,7 +89,7 @@
                         <p>Charge 10% VAT</p>
                     </div>
                     <div class="right">
-                        <p id= "vat">$50</p>
+                        <p id= "vat">$0</p>
                     </div>
                 </div>
                 <hr>
@@ -106,7 +109,8 @@
             <h1>discover <br> around the world</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise voluptatibus quam</p>
         </div>
-    </section>
+    </main>
+    
 
     <!--Thank You-->
 
@@ -141,10 +145,12 @@
                 const totalSub = firstClassCount * 150  + EconomyCount *100 ;
                document.getElementById("subTotal").innerText= "$ " + totalSub;
                 const vatCount = totalSub * 0.1;
-                document.getElementById("vat").innerText = vatCount;
+                document.getElementById("vat").innerText ="$ " + vatCount;
                 const grandTotal = totalSub + vatCount;
-                document.getElementById("grand-total").innerText = grandTotal;
+                document.getElementById("grand-total").innerText ="$ " + grandTotal;
             };
+
+            
             
 
 
